@@ -49,6 +49,9 @@
 					data.set(this.buffer[i], offset);
 					offset += this.buffer[i].length;
 				}
+
+				console.log(this.buffer, this.size);
+
 				// 压缩
 				var compression = parseInt(this.inputSampleRate /
 					this.outputSampleRate);
